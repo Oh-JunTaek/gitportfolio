@@ -3,7 +3,7 @@
 ## 가상환경
 1. 가상환경 생성
 ```
-python3 -m venv venv
+python3 -m venv gitpo
 ```
 2.  For Mac 
 ```
