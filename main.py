@@ -8,6 +8,7 @@ import os
 
 # MongoDB 연결 설정
 load_dotenv()
+
 mongo_uri = os.getenv("MONGODB_URI")
 client = MongoClient(mongo_uri)
 db = client["resume"]  # DB 이름 설정
