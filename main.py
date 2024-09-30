@@ -1,5 +1,6 @@
 from models.llama import get_llama_model
 from utils.prompt import get_prompt_template
+# from utils.prompt_makehtml import get_prompt_template_html
 from utils.keywordprompt import get_star_keywords_prompt_template
 from utils.github_api import get_repo_info
 from pymongo import MongoClient
@@ -19,6 +20,11 @@ def save_as_markdown(content, file_name="resume.md"):
     with open(file_name, "w", encoding="utf-8") as f:
         f.write(content)
 
+# def save_as_html(content, file_name="resume.html"):
+#     """답변을 HTML 파일로 저장하는 함수"""
+#     with open(file_name, "w", encoding="utf-8") as f:
+#         f.write(content)
+        
 def save_keywords_to_db(repo_name, keywords):
     """레포지토리 이름과 추출한 키워드를 MongoDB에 저장하는 함수"""
     document = {
@@ -45,6 +51,10 @@ if __name__ == "__main__":
     # 3. 결과를 .md 파일로 저장
     save_as_markdown(resume_result)
     print("이력서가 .md 파일로 저장되었습니다.")
+
+    # # 3. 결과를 HTML 파일로 저장
+    # save_as_html(resume_result)  # HTML 형식으로 저장
+    # print("이력서가 .html 파일로 저장되었습니다.")
 
     # 4. 키워드를 MongoDB에 저장
     save_keywords_to_db(repo_name, keyword_result)
