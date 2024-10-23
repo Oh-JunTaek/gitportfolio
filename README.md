@@ -7,7 +7,7 @@ python -m venv gitpo
 ```
 2.  For Mac 
 ```
-source venv/bin/activate
+source gitpo/bin/activate
 ```
 3. For Windows
 ```
