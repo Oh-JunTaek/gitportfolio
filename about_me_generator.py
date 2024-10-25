@@ -18,7 +18,7 @@ def main():
 
     # 3. 프롬프트 구성
     sample_prompt = f"""
-    답변은 한국어로 생성하세요. 당신은 해당 기업에 지원하는 지원자입니다. 직접적인 기업에 대한 언급은 하지 마세요. 비유적 표현이 포함되면 좋습니다. Generate an 'About Me' based on the following information:
+    답변은 한국어로 생성하세요. 당신은 해당 기업에 지원하는 지원자입니다. 기업에 대한 직접적인 언급은 하지 마세요. 비유적 표현이 포함되면 좋습니다. Generate an 'About Me' based on the following information:
 
     Company Information:
     - Name: {company_info['name']}
@@ -35,7 +35,6 @@ def main():
     주어진 정보와 관련있는 1~2단어: 그 단어의 의미가 담긴 인재상 풀이
     예시 'about me'는 다음과 같이 1줄로 3개 생성하세요.
     답변을 생성할 때 README와 깃허브 프로젝트를 최대한 반영하고 없으면 기업정보를 기반으로 생성하세요.
-    시적인(문학적인) 표현을 담아서 생성하세요.
     Proactive Development: 필요한 미래를 앞당기기 위해 새로운 도전에 적극적으로 임합니다.
     """
     for repo in github_repos:
