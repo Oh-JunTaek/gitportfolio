@@ -1,6 +1,12 @@
 from utils.confirm_keywords import get_user_confirmation
 from utils.keywordprompt import get_resume_keywords_prompt_template  # 새로운 프롬프트로 변경
 from prompt.resume_sample_prompt import get_resume_sample_prompt_template  # 이력서 샘플 프롬프트
+
+from langchain.prompts import PromptTemplate
+from langchain.chains import LLMChain
+from models.custom_llama_llm import CustomLlamaLLM 
+
+
 from models.llama import get_llama_model
 # from models.openAI import get_openai_model  # GPT4o-mini 모델 호출을 위한 import
 from utils.github_api import get_repo_info
@@ -8,6 +14,8 @@ from utils.generate_resume import generate_resume
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
+
+
 
 # MongoDB 연결 설정
 load_dotenv()
@@ -48,6 +56,8 @@ if __name__ == "__main__":
     # 모든 레포지토리의 키워드를 저장할 리스트
     all_keywords = []
     extracted_data = {}
+    
+    llm = CustomLlamaLLM()
 
     # 각 레포지토리를 처리
     for repo_name in repo_names:
@@ -60,6 +70,7 @@ if __name__ == "__main__":
         keyword_prompt = get_resume_keywords_prompt_template()  # 프롬프트 생성
         keyword_result = get_llama_model(keyword_prompt.format(github_data=github_data))
         keywords = keyword_result.strip().split(",")
+
 
         # 추출된 키워드를 통합 리스트에 추가
         all_keywords.extend(keywords)
