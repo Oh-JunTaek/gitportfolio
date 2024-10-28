@@ -55,3 +55,4 @@ pip install -r requirements.txt
 2. GitHub 외부 데이터 소스와 연동하여 더 다양한 이력서 형식 지원.
 3. 이력서 자동 번역 기능 추가 (다국어 지원).
 4. 어바웃 미 디테일
+5. api사용
