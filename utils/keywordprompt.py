@@ -1,14 +1,11 @@
 from langchain.prompts import PromptTemplate
 
 def get_resume_keywords_prompt_template():
-    """
-    GitHub 활동 데이터로부터 이력서의 각 섹션에 필요한 정보를 추출하는 프롬프트.
-    """
     template = """
     너는 사용자가 추출한 GitHub 레포지토리 정보들을 사용하여 이력서를 생성할 수 있도록 각 섹션에 필요한 데이터를 추출해야 해. 만약 정보가 없으면 "NULL"로 표시해.
     
     ## Skills
-    {skills}
+
 
     ## Languages
     {languages}

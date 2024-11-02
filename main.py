@@ -5,6 +5,7 @@ from prompt.resume_sample_prompt import get_resume_sample_prompt_template  # 이
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from models.custom_llama_llm import CustomLlamaLLM 
+from utils.github_api import get_repo_info
 
 
 from models.llama import get_llama_model

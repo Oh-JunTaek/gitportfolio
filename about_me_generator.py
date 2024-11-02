@@ -3,18 +3,30 @@ from utils.company_info import get_company_from_json
 from models import get_openai_model_and_check_moderation
 
 def main():
-    # 1. 회사 정보 가져오기 (사전 등록된 JSON 파일에서)
-    company_name = "카카오"  # 회사 이름을 하드코딩 또는 외부에서 가져오는 방식으로
+    
+    # 1. 사용자로부터 깃허브 닉네임 입력받기
+    github_username = input("깃허브 닉네임을 입력하세요: ")
+    github_readme = get_github_profile_readme(github_username)
+    github_repos = get_user_repos(github_username)
+    
+    # 2. 지원 가능한 회사 목록 출력
+    company_names = ["카카오", "우아한 형제들", "라인", "쿠팡", "토스", "현대", "기아", "삼성전자", "LG", "네이버"]
+    print("지원하는 목표 회사를 선택하세요:")
+    for idx, name in enumerate(company_names, 1):
+        print(f"{idx}. {name}")
+    
+    # 3. 사용자가 선택한 회사 정보 가져오기
+    company_index = int(input("회사 번호를 입력하세요: ")) - 1
+    if company_index < 0 or company_index >= len(company_names):
+        print("유효하지 않은 번호입니다.")
+        return
+
+    company_name = company_names[company_index]
     company_info = get_company_from_json(company_name)
 
     if not company_info:
         print(f"'{company_name}'에 대한 사전 등록된 정보가 없습니다.")
         return
-
-    # 2. GitHub 정보 가져오기 (사전 입력된 사용자 이름)
-    github_username = "M-Yadolahi"  # GitHub 사용자 이름을 하드코딩 또는 외부에서 가져오는 방식으로
-    github_readme = get_github_profile_readme(github_username)
-    github_repos = get_user_repos(github_username)
 
     # 3. 프롬프트 구성
     sample_prompt = f"""
