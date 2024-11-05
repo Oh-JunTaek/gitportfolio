@@ -1,0 +1,156 @@
+{
+    "Python": [
+      "Django", "Flask", "FastAPI", "Tornado", "Pyramid", 
+      "TensorFlow", "PyTorch", "Scikit-Learn", "Keras", "H2O.ai",
+      "Scrapy", "Tkinter", "PyQt", "Kivy", "Dash", 
+      "Celery", "Bottle", "Chalice", "hug", "BeeWare", "Falcon", 
+      "Pandas", "NumPy", "Pydantic", "OpenCV", "Plotly"
+    ],
+    "JavaScript": [
+      "React", "Vue", "Angular", "Express", "NestJS", 
+      "Meteor", "Svelte", "Next.js", "Nuxt.js", "Gatsby",
+      "Ember.js", "Backbone.js", "jQuery", "Redux", "Socket.IO",
+      "Mithril", "Aurelia", "Chart.js", "D3.js", "Mocha", "Jest"
+    ],
+    "Java": [
+      "Spring", "Hibernate", "Struts", "JSF", "GWT", 
+      "Vaadin", "Play Framework", "Apache Wicket", "Quarkus", "Micronaut",
+      "Spark", "JUnit", "Mockito", "Grails", "Apache Camel", 
+      "Vert.x", "JHipster", "Jersey", "Dropwizard", "Stripes"
+    ],
+    "C#": [
+      ".NET Core", "ASP.NET", "Blazor", "Xamarin", "Unity", 
+      "NancyFx", "ServiceStack", "MSTest", "NUnit", "SpecFlow", 
+      "Orleans", "MonoGame", "Prism", "SignalR", "Topshelf"
+    ],
+    "Ruby": [
+      "Ruby on Rails", "Sinatra", "Hanami", "Padrino", "Grape", 
+      "Rack", "Roda", "RSpec", "Cucumber", "Capybara", 
+      "Sidekiq", "Resque", "Celluloid", "Volt", "Sequel"
+    ],
+    "PHP": [
+      "Laravel", "Symfony", "CodeIgniter", "CakePHP", "Zend Framework", 
+      "Yii", "Phalcon", "Slim", "FuelPHP", "Laminas",
+      "Medoo", "PHPixie", "Nette", "PHPUnit", "Behat"
+    ],
+    "Go": [
+      "Gin", "Echo", "Beego", "Revel", "Fiber", 
+      "Buffalo", "Goji", "Martini", "Gorilla", "Mux", 
+      "Gorm", "Go-Kit", "Fasthttp", "Logrus", "Glide"
+    ],
+    "Rust": [
+      "Rocket", "Actix", "Yew", "Tokio", "Axum", 
+      "Diesel", "warp", "tower", "serde", "reqwest", 
+      "hyper", "Tide", "SeaORM", "juniper", "async-std"
+    ],
+    "Kotlin": [
+      "Ktor", "Spring Boot", "Vert.x", "Micronaut", "Javalin", 
+      "Exposed", "Spek", "Kotest", "Koin", "Arrow"
+    ],
+    "Swift": [
+      "Vapor", "Kitura", "Perfect", "SwiftUI", "Alamofire", 
+      "RxSwift", "CoreData", "MapKit", "PromiseKit", "Combine"
+    ],
+    "C++": [
+    "Qt", "Boost", "Poco", "Caffe", "Armadillo", 
+    "OpenCV", "TensorRT", "Catch2", "GLFW", "SDL", 
+    "Magnum", "ROOT", "libtorch", "Intel TBB", "Eigen"
+    ],
+    "C": [
+        "GTK", "libuv", "GLib", "libevent", "ncurses",
+        "OpenSSL", "curl", "SQLite", "GSL", "CURL",
+        "CMocka", "APR", "BoringSSL", "FFmpeg", "zlib"
+    ],
+    "Visual Basic": [
+        "ASP.NET", "VBScript", "WinForms", "WPF", "ADO.NET",
+        "Excel VBA", "Access VBA", "MSDN", "Crystal Reports", "VB6",
+        "OpenAccess", "FlexGrid", "Infragistics", "ComponentOne", "ActiveX"
+    ],
+    "Fortran": [
+        "MPI", "OpenMP", "LAPACK", "BLAS", "NetCDF",
+        "HDF5", "FLINT", "MKL", "PETSc", "FFTW",
+        "FortranGL", "CFDLib", "NAG Fortran Library", "PGPLOT", "MSL"
+    ],
+    "Delphi/Object Pascal": [
+        "FireMonkey", "VCL", "DevExpress", "TMS Software", "FastReport",
+        "IntraWeb", "UniGUI", "DataSnap", "QuickReport", "Indy",
+        "Overbyte ICS", "ACBr", "EurekaLog", "SynEdit", "Orpheus"
+    ],
+    "R": [
+        "Shiny", "RMarkdown", "Rcpp", "ggplot2", "dplyr",
+        "caret", "tidyverse", "data.table", "lubridate", "knitr",
+        "plotly", "Rshiny", "readr", "stringr", "sparklyr"
+    ],
+    "Scala": [
+        "Akka", "Play Framework", "Spark", "ScalaTest", "Scalatra",
+        "Cats", "Monix", "Finagle", "Slick", "Lift",
+        "Spray", "ZIO", "Doobie", "Algebird", "Scio"
+    ],
+    "Julia": [
+        "Flux", "Gen", "DifferentialEquations.jl", "JuMP", "MLJ.jl",
+        "DataFrames.jl", "Plots.jl", "Distributions.jl", "LightGraphs.jl", "Turing.jl",
+        "Makie.jl", "HTTP.jl", "CSV.jl", "GLM.jl", "JSON.jl"
+    ],
+    "Perl": [
+        "Mojolicious", "Dancer", "Catalyst", "DBI", "Mason",
+        "Modern::Perl", "Template Toolkit", "CGI.pm", "Starman", "Moose",
+        "Plack", "PSGI", "Test::More", "DateTime", "LWP::UserAgent"
+    ],
+    "Lua": [
+        "LÖVE", "OpenResty", "Kong", "Torch", "Corona SDK",
+        "LuCI", "lapis", "Moonscript", "busted", "lua-resty-http",
+        "luaposix", "Penlight", "windfield", "IUP", "luarocks"
+    ],
+    "Dart": [
+        "Flutter", "AngularDart", "OverReact", "Shelf", "Dart Frog",
+        "Jaguar", "aqueduct", "stagehand", "Webdev", "test",
+        "Flame", "sqflite", "provider", "json_serializable", "bloc"
+    ],
+    "Haskell": [
+        "Yesod", "Servant", "Snap", "Scotty", "Reflex",
+        "Happstack", "Hakyll", "Conduit", "Warp", "persistent",
+        "QuickCheck", "Shelly", "Parsec", "Aeson", "lens"
+    ],
+    "Objective-C": [
+        "Cocoa", "Cocoa Touch", "AFNetworking", "Masonry", "Mantle",
+        "MagicalRecord", "SDWebImage", "PromiseKit", "CocoaLumberjack", "CorePlot",
+        "XCTest", "Realm", "GPUImage", "AlamofireObjC", "AsyncDisplayKit"
+    ],
+    "TypeScript": [
+        "NestJS", "Angular", "React", "Vue", "Next.js", 
+        "Nuxt.js", "Svelte", "LoopBack", "RxJS", "Deno",
+        "Feathers", "TypeORM", "InversifyJS", "Framer Motion", 
+        "Stencil", "Sapper", "Express.js", "Redux", "Jest", "Mocha"
+    ],
+    "Solidity": [
+        "OpenZeppelin", "Hardhat", "Truffle", "Ganache", "DappHub",
+        "Brownie", "Embark", "Ape", "Ether.js", "web3.js",
+        "Chainlink", "Alchemy", "Infura", "Oraclize", "Augur"
+    ],
+    "D": [
+        "Vibe.d", "Hunt Framework", "Mira", "DlangUI", "DerelictSDL2",
+        "GtkD", "Orange", "Diamond MVC", "SDLang", "arsd-official",
+        "Unit-Threaded", "Mir Algorithm", "Ocean", "Tanuki", "Dplug"
+    ],
+    "PowerShell": [
+        "PSReadLine", "Pester", "PowerCLI", "SharePointPnP", "dbatools",
+        "SHiPS", "AWSPowerShell", "Az Module", "Posh-SSH", "Microsoft.Graph",
+        "ImportExcel", "xNetworking", "xSQLServer", "psPAS", "SQLPS"
+    ],
+    "Erlang": [
+        "OTP", "Cowboy", "RabbitMQ", "Riak", "MongooseIM",
+        "Zotonic", "Syn", "ejabberd", "VerneMQ", "Phoenix",
+        "rebar3", "gen_smtp", "Proper", "gproc", "lager"
+    ],
+    "Elixir": [
+        "Phoenix", "Nerves", "Absinthe", "Ecto", "ExUnit",
+        "Plug", "Distillery", "Guardian", "Quantum", "Benchee",
+        "Broadway", "ExAws", "Bamboo", "Swoosh", "ExDoc"
+    ],
+    "F#": [
+        "SAFE Stack", "Giraffe", "FsUnit", "Fable", "Suave",
+        "Expecto", "XPlot", "Paket", "Farmer", "Freya",
+        "Hopac", "TickSpec", "Akka.NET", "Forge", "Elmish"
+    ]
+}
+  
