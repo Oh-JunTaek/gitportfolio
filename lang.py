@@ -5,7 +5,7 @@ import os
 # GitHub 인증 설정
 github_token = os.getenv("GITHUB_TOKEN")
 g = Github(github_token)
-repo_name = "Oh-JunTaek/gitportfolio"  # 예제 레포지토리 이름
+repo_name = "ibigio/shell-ai"  # 예제 레포지토리 이름
 
 repo = g.get_repo(repo_name)
 
@@ -52,5 +52,6 @@ for topic in topics:
 
 # 최종 결과 출력
 print("\n--- 최종 결과 ---")
+print(f"사용한 레포:{repo_name}")
 print(f"사용 언어: {primary_languages}")
 print(f"사용 프레임워크: {', '.join(sorted(used_frameworks))}")

@@ -43,10 +43,9 @@ def main():
 
     GitHub Repositories:
     
-    'about me'는 다음과 같은 양식으로 생성하세요.
     주어진 정보와 관련있는 1~2단어: 그 단어의 의미가 담긴 인재상 풀이
-    예시 'about me'는 다음과 같이 1줄로 3개 생성하세요.
     답변을 생성할 때 README와 깃허브 프로젝트를 최대한 반영하고 없으면 기업정보를 기반으로 생성하세요.
+    예시 'about me'는 다음과 같이 1줄로 3개 생성하세요.
     Proactive Development: 필요한 미래를 앞당기기 위해 새로운 도전에 적극적으로 임합니다.
     """
     for repo in github_repos:
