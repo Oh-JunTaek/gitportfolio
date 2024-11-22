@@ -57,3 +57,6 @@ pip install -r requirements.txt
 4. 어바웃 미 디테일
 5. api사용
 6. 코드통합
+7. 기능 고도화
+8. 정해진 양식에 맞게 출력하기
+9. 수정 api생성
